@@ -11,13 +11,13 @@ from utils.drivers import get_local_driver
 @pytest.fixture()
 def driver(request):
     """Return the default driver"""
+    driver = get_local_driver()
+    driver.implicitly_wait(10)
 
     def teardown():
         driver.quit()
 
     request.addfinalizer(teardown)
-    driver = get_local_driver()
-    driver.implicitly_wait(10)
     return driver
 
 
