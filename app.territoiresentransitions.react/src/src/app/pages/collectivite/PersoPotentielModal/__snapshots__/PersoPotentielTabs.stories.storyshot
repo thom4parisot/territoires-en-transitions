@@ -85,11 +85,10 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         Caractéristiques liées
       </h6>
       <div
-        className="fr-form-group"
+        className="fr-form-group "
       >
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -109,6 +108,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c1"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c1"
               />
@@ -126,6 +126,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c2"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c2"
               />
@@ -143,6 +144,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c3"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c3"
               />
@@ -157,7 +159,6 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         </fieldset>
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -177,6 +178,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q2-y"
                 name="binaire"
+                onChange={[Function]}
                 type="radio"
                 value="true"
               />
@@ -194,6 +196,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q2-n"
                 name="binaire"
+                onChange={[Function]}
                 type="radio"
                 value="false"
               />
@@ -208,7 +211,6 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         </fieldset>
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -233,6 +235,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
               max={100}
               min={0}
               name="proportion"
+              onChange={[Function]}
               style={
                 Object {
                   "width": 224,
@@ -410,11 +413,10 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         Caractéristique liée
       </h6>
       <div
-        className="fr-form-group"
+        className="fr-form-group "
       >
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -434,6 +436,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q2-y"
                 name="binaire"
+                onChange={[Function]}
                 type="radio"
                 value="true"
               />
@@ -451,6 +454,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q2-n"
                 name="binaire"
+                onChange={[Function]}
                 type="radio"
                 value="false"
               />
@@ -630,11 +634,10 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         Caractéristique liée
       </h6>
       <div
-        className="fr-form-group"
+        className="fr-form-group "
       >
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -654,6 +657,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q2-y"
                 name="binaire"
+                onChange={[Function]}
                 type="radio"
                 value="true"
               />
@@ -671,6 +675,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={true}
                 id="q2-n"
                 name="binaire"
+                onChange={[Function]}
                 type="radio"
                 value="false"
               />
@@ -850,11 +855,10 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         Caractéristique liée
       </h6>
       <div
-        className="fr-form-group"
+        className="fr-form-group "
       >
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -874,6 +878,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c1"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c1"
               />
@@ -891,6 +896,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c2"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c2"
               />
@@ -908,6 +914,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c3"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c3"
               />
@@ -1087,11 +1094,10 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         Caractéristique liée
       </h6>
       <div
-        className="fr-form-group"
+        className="fr-form-group "
       >
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -1111,6 +1117,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c1"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c1"
               />
@@ -1128,6 +1135,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={false}
                 id="q1-c2"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c2"
               />
@@ -1145,6 +1153,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
                 checked={true}
                 id="q1-c3"
                 name="choix"
+                onChange={[Function]}
                 type="radio"
                 value="c3"
               />
@@ -1324,11 +1333,10 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         Caractéristique liée
       </h6>
       <div
-        className="fr-form-group"
+        className="fr-form-group "
       >
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -1353,6 +1361,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
               max={100}
               min={0}
               name="proportion"
+              onChange={[Function]}
               style={
                 Object {
                   "width": 224,
@@ -1530,11 +1539,10 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
         Caractéristique liée
       </h6>
       <div
-        className="fr-form-group"
+        className="fr-form-group "
       >
         <fieldset
           className="fr-fieldset"
-          onChange={[Function]}
         >
           <legend
             className="fr-fieldset__legend fr-text--regular pt-6"
@@ -1559,6 +1567,7 @@ exports[`Storyshots App/Pages/Collectivite/Perso Potentiel Modal/Perso Potentiel
               max={100}
               min={0}
               name="proportion"
+              onChange={[Function]}
               style={
                 Object {
                   "width": 224,
