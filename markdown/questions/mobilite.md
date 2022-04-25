@@ -61,7 +61,7 @@ thematique_id: mobilite
 actions: [cae_4.1.2]
 ```
 
-# la collectivité dispose-t-elle des compétences en matière de circulation/gestion du trafic (pouvoir de police) ?
+# La collectivité dispose-t-elle des compétences en matière de circulation/gestion du trafic (pouvoir de police) ?
 ```yaml
 id: pouvoir_police
 type: binaire
@@ -77,7 +77,7 @@ thematique_id: mobilite
 actions: [cae_4.2.2]
 ```
 
-# La collectivité dispose t'elle de compétences en matière de politique cyclable (AOM ou compétente en matière d’infrastructures vélos, de stationnement vélos, de services associés aux vélos) ?
+# La collectivité dispose-t-elle de compétences en matière de politique cyclable (AOM ou compétente en matière d’infrastructures vélos, de stationnement vélos, de services associés aux vélos) ?
 ```yaml
 id: cyclable
 type: binaire
