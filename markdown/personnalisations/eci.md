@@ -182,6 +182,19 @@ reponse(dechets_1, NON) et reponse(dechets_2, NON)
 ```
 Pour les collectivités n'ayant ni la compétence "collecte des déchets", ni la compétence "traitement des déchets", le score de l'action 4.1. est réduit à 0 et les statuts sont "non concerné".
 
+# Désactivation eci_4.2 liee collecte dechets
+```yaml
+action_id: eci_4.2
+```
+## Règles
+### Désactivation
+```formule
+reponse(dechets_1, NON) et reponse(dechets_2, NON)
+```
+Pour les collectivités n'ayant ni la compétence "collecte des déchets", ni la compétence "traitement des déchets", le score de l'action 4.2 est réduit à 0 et les statuts sont "non concerné".
+Pour les collectivités n'ayant pas la compétence "collecte des déchets", les scores des sous-actions 4.2.1 à 4.2.4 sont réduits à 0 et les statuts de ces 4 sous-actions sont "non concerné".
+Pour les collectivités ayant mis en place la redevance d’enlèvement des ordures ménagères (REOM), les scores des sous-action 4.2.1 et 4.2.3 sont réduits à 0 et les statuts de ces 2 sous-actions sont "non concerné".
+La sous-action 4.2.5 ne s'adressent qu'aux syndicats de traitement.
 
 # Désactivation eci_4.2.1 liee collecte dechets
 ```yaml
@@ -192,10 +205,6 @@ action_id: eci_4.2.1
 ```formule
 reponse(dechets_1, NON) ou reponse(REOM, OUI) 
 ```
-Pour les collectivités n'ayant ni la compétence "collecte des déchets", ni la compétence "traitement des déchets", le score de l'action 4.2 est réduit à 0 et les statuts sont "non concerné".
-Pour les collectivités n'ayant pas la compétence "collecte des déchets", les scores des sous-actions 4.2.1 à 4.2.4 sont réduits à 0 et les statuts de ces 4 sous-actions sont "non concerné".
-Pour les collectivités ayant mis en place la redevance d’enlèvement des ordures ménagères (REOM), les scores des sous-action 4.2.1 et 4.2.3 sont réduits à 0 et les statuts de ces 2 sous-actions sont "non concerné".
-La sous-action 4.2.5 ne s'adressent qu'aux syndicats de traitement.
 
 # Désactivation eci_4.2.2 liee collecte dechets
 ```yaml
