@@ -84,7 +84,8 @@ Pour une collectivité n'ayant ni la compétence PLU, ni l'instruction, ni l'oct
 ### Réduction de potentiel
 ```formule
 si reponse(urba_1, NON) et reponse (urba_2, NON) et reponse(urba_3, NON) alors 0
-sinon si reponse(urba_1, OUI) ou reponse(urba_2, OUI) et reponse(urba_3, OUI) alors 0.5
+sinon si reponse(urba_1, OUI) et reponse(urba_2, OUI) et reponse(urba_3, OUI) alors 1.0
+sinon si reponse(urba_1, OUI) ou reponse(urba_2, OUI) ou reponse(urba_3, OUI) alors 0.5
 ```
 Pour une collectivité n'ayant ni la compétence PLU, ni l'instruction, ni l'octroi des permis de construire, le score de la 1.3.3 est réduit de 100 %.
 
