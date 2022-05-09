@@ -226,3 +226,9 @@ as
 select l.*, nom as collectivite_nom
 from labellisation l
          join named_collectivite nc on l.collectivite_id = nc.collectivite_id;
+
+create view retool_labellisation_demande
+as
+select ld.*, nom
+from labellisation_demande ld left join named_collectivite nc 
+on ld.collectivite_id = nc.collectivite_id
