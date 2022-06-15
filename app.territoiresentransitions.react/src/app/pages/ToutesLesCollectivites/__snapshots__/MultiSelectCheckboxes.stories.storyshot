@@ -10,6 +10,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Multi Select Checkboxes S
     </div>
     <div
       className="small-checkbox  fr-checkbox-group text-sm"
+      data-test="exemple"
     >
       <div
         className="my-2"
@@ -145,6 +146,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Multi Select Checkboxes S
     </div>
     <div
       className="small-checkbox  fr-checkbox-group text-sm"
+      data-test="exemple"
     >
       <div
         className="my-2"

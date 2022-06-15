@@ -72,6 +72,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
             <input
               aria-hidden={true}
               className="MuiSelect-nativeInput"
+              data-test="Région"
               onAnimationStart={[Function]}
               onChange={[Function]}
               tabIndex={-1}
@@ -158,6 +159,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
             <input
               aria-hidden={true}
               className="MuiSelect-nativeInput"
+              data-test="Département"
               onAnimationStart={[Function]}
               onChange={[Function]}
               tabIndex={-1}
@@ -209,6 +211,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="tc"
           >
             <div
               className="my-2"
@@ -373,6 +376,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="pop"
           >
             <div
               className="my-2"
@@ -486,6 +490,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="ref"
           >
             <div
               className="my-2"
@@ -548,6 +553,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="nx"
           >
             <div
               className="my-2"
@@ -678,6 +684,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="tx"
           >
             <div
               className="my-2"
@@ -887,6 +894,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           >
             <a
               className="text-sm"
+              data-test="clear-filters"
               href="/toutes_collectivites"
             >
               <div
@@ -2918,6 +2926,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
             <input
               aria-hidden={true}
               className="MuiSelect-nativeInput"
+              data-test="Région"
               onAnimationStart={[Function]}
               onChange={[Function]}
               tabIndex={-1}
@@ -3004,6 +3013,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
             <input
               aria-hidden={true}
               className="MuiSelect-nativeInput"
+              data-test="Département"
               onAnimationStart={[Function]}
               onChange={[Function]}
               tabIndex={-1}
@@ -3055,6 +3065,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="tc"
           >
             <div
               className="my-2"
@@ -3219,6 +3230,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="pop"
           >
             <div
               className="my-2"
@@ -3332,6 +3344,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="ref"
           >
             <div
               className="my-2"
@@ -3394,6 +3407,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="nx"
           >
             <div
               className="my-2"
@@ -3524,6 +3538,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="tx"
           >
             <div
               className="my-2"
@@ -5737,6 +5752,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
             <input
               aria-hidden={true}
               className="MuiSelect-nativeInput"
+              data-test="Région"
               onAnimationStart={[Function]}
               onChange={[Function]}
               tabIndex={-1}
@@ -5823,6 +5839,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
             <input
               aria-hidden={true}
               className="MuiSelect-nativeInput"
+              data-test="Département"
               onAnimationStart={[Function]}
               onChange={[Function]}
               tabIndex={-1}
@@ -5874,6 +5891,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="tc"
           >
             <div
               className="my-2"
@@ -6038,6 +6056,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="pop"
           >
             <div
               className="my-2"
@@ -6151,6 +6170,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="ref"
           >
             <div
               className="my-2"
@@ -6213,6 +6233,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="nx"
           >
             <div
               className="my-2"
@@ -6343,6 +6364,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
           </div>
           <div
             className="small-checkbox  fr-checkbox-group text-sm"
+            data-test="tx"
           >
             <div
               className="my-2"
@@ -6564,6 +6586,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Page Toutes Les Collectiv
         >
           <a
             className="text-sm"
+            data-test="clear-filters"
             href="/toutes_collectivites"
           >
             <div

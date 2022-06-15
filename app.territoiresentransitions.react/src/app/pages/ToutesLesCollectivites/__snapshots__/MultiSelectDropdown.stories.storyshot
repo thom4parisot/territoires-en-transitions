@@ -45,6 +45,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Multi Select Dropdown Sel
       <input
         aria-hidden={true}
         className="MuiSelect-nativeInput"
+        data-test="Région"
         onAnimationStart={[Function]}
         onChange={[Function]}
         tabIndex={-1}
@@ -134,6 +135,7 @@ exports[`Storyshots App/Pages/Toutes Les Collectivites/Multi Select Dropdown Sel
       <input
         aria-hidden={true}
         className="MuiSelect-nativeInput"
+        data-test="Région"
         onAnimationStart={[Function]}
         onChange={[Function]}
         tabIndex={-1}
