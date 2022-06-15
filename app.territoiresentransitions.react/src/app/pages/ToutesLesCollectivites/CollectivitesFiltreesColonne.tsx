@@ -22,7 +22,11 @@ const DesactiverLesFiltres = (props: {onClick: () => void}) => {
   // fixme. hard navigate to reset filters
   return (
     <div className="flex">
-      <a className="text-sm" href={allCollectivitesPath}>
+      <a
+        className="text-sm"
+        data-test="clear-filters"
+        href={allCollectivitesPath}
+      >
         <div className="text-bf500 border-bf500">
           <span
             style={{fontSize: '.7rem'}}

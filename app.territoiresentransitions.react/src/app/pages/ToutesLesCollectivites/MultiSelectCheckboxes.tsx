@@ -18,7 +18,10 @@ export const MultiSelectCheckboxes = (props: TMultiSelectCheckboxesProps) => {
   return (
     <div>
       <div className="font-semibold text-md mb-2">{title}</div>
-      <div className="small-checkbox  fr-checkbox-group text-sm">
+      <div
+        className="small-checkbox  fr-checkbox-group text-sm"
+        data-test={htmlId}
+      >
         {optionsIncludingAll.map(option => (
           <div className="my-2" key={option.id}>
             <input

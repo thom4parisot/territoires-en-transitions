@@ -20,6 +20,7 @@ export const MultiSelectDropdown = <T extends string>(
     <div>
       <div className="mb-2 font-semibold">{props.title}</div>
       <Select
+        inputProps={{'data-test': props.title}}
         MenuProps={{
           getContentAnchorEl: null,
         }}
