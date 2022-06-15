@@ -127,6 +127,23 @@ function fillFormWithValues(elem, dataTable) {
 }
 Given(/je remplis le "([^"]*)" avec les valeurs suivantes/, fillFormWithValues);
 
+Given(/je sélectionne l'option "([^"]+)" dans le ([^"]+)/, selectOption);
+function selectOption(value, elem) {
+  // ouvre le composant Select
+  const dropdown = resolveSelector(this, elem);
+  cy.get(dropdown.selector).parent().click();
+  // et sélectionne l'option voulue
+  cy.get(dropdown.options[value]).click();
+  // puis clique en dehors pour fermer la liste déroulante
+  cy.get('body').click(10, 10);
+}
+
+Given(/je coche l'option "([^"]+)" dans le ([^"]+)/, checkOption);
+function checkOption(value, elem) {
+  const checkboxes = resolveSelector(this, elem);
+  cy.get(`${checkboxes.selector} ${checkboxes.options[value]}`).click();
+}
+
 Given(/l'appel à "([^"]*)" va répondre "([^"]*)"/, function (name, reply) {
   const r = this.LocalMocks?.[name]?.[reply];
   assert(r, 'mock non trouvé');
