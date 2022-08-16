@@ -37,7 +37,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As A
           <th
             className="py-3 px-5 whitespace-nowrap"
           >
-            Champs d'intervention
+            Champ d'intervention
              
             <span
               className="block text-xs font-normal"
@@ -57,20 +57,12 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As A
             </span>
           </th>
           <th
-            className="py-3 px-5 whitespace-nowrap text-right"
+            className="py-3 px-5 whitespace-nowrap"
           >
             <div
-              className="flex items-center justify-end"
+              className="flex items-center"
             >
               Accès
-              <a
-                className="!shadow-none"
-                href="#"
-              >
-                <span
-                  className="fr-fi-information-line block ml-1 mt-1 scale-75"
-                />
-              </a>
             </div>
           </th>
         </tr>
@@ -177,7 +169,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As A
             </div>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <div
               data-test="acces-dropdown"
@@ -309,7 +301,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As A
             </div>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <div
               data-test="acces-dropdown"
@@ -438,7 +430,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As A
             </div>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <div
               data-test="acces-dropdown"
@@ -475,22 +467,43 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As A
             colSpan={5}
           >
             <span
-              className="block mb-1 text-sm text-gray-500"
+              className="block mb-0.5 text-xs text-gray-500"
             >
               invite@dodo.com
             </span>
             <span
-              className="text-sm text-gray-600"
+              className="font-medium text-xs text-gray-600"
             >
               Création de compte en attente
             </span>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
-            <span>
-              Lecture
-            </span>
+            <div
+              data-test="acces-dropdown"
+            >
+              <button
+                aria-label="ouvrir le menu"
+                className="flex items-center w-full p-2 -ml-2 text-left text-sm"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onPointerDown={[Function]}
+              >
+                <span
+                  className="mr-auto"
+                >
+                  Lecture
+                </span>
+                <span
+                  className="fr-fi-arrow-down-s-line mt-1 ml-1 scale-90 "
+                />
+              </button>
+            </div>
           </td>
         </tr>
       </tbody>
@@ -536,7 +549,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As E
           <th
             className="py-3 px-5 whitespace-nowrap"
           >
-            Champs d'intervention
+            Champ d'intervention
              
             <span
               className="block text-xs font-normal"
@@ -556,20 +569,12 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As E
             </span>
           </th>
           <th
-            className="py-3 px-5 whitespace-nowrap text-right"
+            className="py-3 px-5 whitespace-nowrap"
           >
             <div
-              className="flex items-center justify-end"
+              className="flex items-center"
             >
               Accès
-              <a
-                className="!shadow-none"
-                href="#"
-              >
-                <span
-                  className="fr-fi-information-line block ml-1 mt-1 scale-75"
-                />
-              </a>
             </div>
           </th>
         </tr>
@@ -629,7 +634,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As E
             </span>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <span>
               Admin
@@ -740,7 +745,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As E
             </div>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <div
               data-test="acces-dropdown"
@@ -822,7 +827,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As E
             </span>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <span>
               Lecture
@@ -838,18 +843,18 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As E
             colSpan={5}
           >
             <span
-              className="block mb-1 text-sm text-gray-500"
+              className="block mb-0.5 text-xs text-gray-500"
             >
               invite@dodo.com
             </span>
             <span
-              className="text-sm text-gray-600"
+              className="font-medium text-xs text-gray-600"
             >
               Création de compte en attente
             </span>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <span>
               Lecture
@@ -899,7 +904,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As L
           <th
             className="py-3 px-5 whitespace-nowrap"
           >
-            Champs d'intervention
+            Champ d'intervention
              
             <span
               className="block text-xs font-normal"
@@ -919,20 +924,12 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As L
             </span>
           </th>
           <th
-            className="py-3 px-5 whitespace-nowrap text-right"
+            className="py-3 px-5 whitespace-nowrap"
           >
             <div
-              className="flex items-center justify-end"
+              className="flex items-center"
             >
               Accès
-              <a
-                className="!shadow-none"
-                href="#"
-              >
-                <span
-                  className="fr-fi-information-line block ml-1 mt-1 scale-75"
-                />
-              </a>
             </div>
           </th>
         </tr>
@@ -992,7 +989,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As L
             </span>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <span>
               Admin
@@ -1058,7 +1055,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As L
             </span>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <span>
               Édition
@@ -1166,7 +1163,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As L
             </div>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <div
               data-test="acces-dropdown"
@@ -1203,18 +1200,18 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable As L
             colSpan={5}
           >
             <span
-              className="block mb-1 text-sm text-gray-500"
+              className="block mb-0.5 text-xs text-gray-500"
             >
               invite@dodo.com
             </span>
             <span
-              className="text-sm text-gray-600"
+              className="font-medium text-xs text-gray-600"
             >
               Création de compte en attente
             </span>
           </td>
           <td
-            className="relative px-4 text-right"
+            className="relative px-4"
           >
             <span>
               Lecture
@@ -1264,7 +1261,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable Empt
           <th
             className="py-3 px-5 whitespace-nowrap"
           >
-            Champs d'intervention
+            Champ d'intervention
              
             <span
               className="block text-xs font-normal"
@@ -1284,20 +1281,12 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable Empt
             </span>
           </th>
           <th
-            className="py-3 px-5 whitespace-nowrap text-right"
+            className="py-3 px-5 whitespace-nowrap"
           >
             <div
-              className="flex items-center justify-end"
+              className="flex items-center"
             >
               Accès
-              <a
-                className="!shadow-none"
-                href="#"
-              >
-                <span
-                  className="fr-fi-information-line block ml-1 mt-1 scale-75"
-                />
-              </a>
             </div>
           </th>
         </tr>
@@ -1356,7 +1345,7 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable Is L
           <th
             className="py-3 px-5 whitespace-nowrap"
           >
-            Champs d'intervention
+            Champ d'intervention
              
             <span
               className="block text-xs font-normal"
@@ -1376,20 +1365,12 @@ exports[`Storyshots app/pages/collectivite/Users/components/MembreListTable Is L
             </span>
           </th>
           <th
-            className="py-3 px-5 whitespace-nowrap text-right"
+            className="py-3 px-5 whitespace-nowrap"
           >
             <div
-              className="flex items-center justify-end"
+              className="flex items-center"
             >
               Accès
-              <a
-                className="!shadow-none"
-                href="#"
-              >
-                <span
-                  className="fr-fi-information-line block ml-1 mt-1 scale-75"
-                />
-              </a>
             </div>
           </th>
         </tr>

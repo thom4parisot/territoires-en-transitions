@@ -76,18 +76,32 @@ const MembreListTableRow = ({
     TAccesDropdownOption | undefined
   >(undefined);
 
+  const onRemoveInvite = (membreEmail: string) => {
+    removeFromCollectivite(membreEmail);
+  };
+
   // Si le membre est en attente d'acceptation d'une invitation
   if (membre_id === null) {
     return (
       <tr data-test={`MembreRow-${email}`} className={rowClassNames}>
         <td colSpan={5} className={cellClassNames}>
-          <span className="block mb-1 text-sm text-gray-500">{email}</span>
-          <span className="text-sm text-gray-600">
+          <span className="block mb-0.5 text-xs text-gray-500">{email}</span>
+          <span className="font-medium text-xs text-gray-600">
             Création de compte en attente
           </span>
         </td>
-        <td className={`${cellClassNames} text-right`}>
-          <span>{niveauAccesLabels[niveau_acces]}</span>
+        <td className={`${cellClassNames}`}>
+          {/* currentUserAccess="edition" permet de n'afficher que l'option "remove" même en étant admin */}
+          {canUpdate ? (
+            <AccesDropdown
+              isCurrentUser={isCurrentUser}
+              currentUserAccess="edition"
+              value={niveau_acces}
+              onSelect={() => onRemoveInvite(membre.email)}
+            />
+          ) : (
+            <span>{niveauAccesLabels[niveau_acces]}</span>
+          )}
         </td>
       </tr>
     );
@@ -163,7 +177,7 @@ const MembreListTableRow = ({
           </span>
         )}
       </td>
-      <td className={`${cellClassNames} text-right`}>
+      <td className={`${cellClassNames}`}>
         {canUpdate ? (
           <>
             <AccesDropdown
@@ -177,6 +191,7 @@ const MembreListTableRow = ({
               setIsOpen={setIsAccesModalOpen}
               selectedOption={accesOptionSelected}
               membreId={membre_id}
+              membreEmail={membre.email}
               isCurrentUser={isCurrentUser}
               updateMembre={updateMembre}
               removeFromCollectivite={removeFromCollectivite}

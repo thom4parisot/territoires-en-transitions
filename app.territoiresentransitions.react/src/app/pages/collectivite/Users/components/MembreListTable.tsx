@@ -39,7 +39,7 @@ const MembreListTable = ({
                 </span>
               </th>
               <th className={thClassNames}>
-                Champs d'intervention{' '}
+                Champ d'intervention{' '}
                 <span className="block text-xs font-normal">
                   dans cette collectivité
                 </span>
@@ -50,13 +50,8 @@ const MembreListTable = ({
                   dans cette collectivité
                 </span>
               </th>
-              <th className={`${thClassNames} text-right`}>
-                <div className="flex items-center justify-end">
-                  Accès
-                  <a href="#" className="!shadow-none">
-                    <span className="fr-fi-information-line block ml-1 mt-1 scale-75" />
-                  </a>
-                </div>
+              <th className={`${thClassNames}`}>
+                <div className="flex items-center">Accès</div>
               </th>
             </tr>
           </thead>
