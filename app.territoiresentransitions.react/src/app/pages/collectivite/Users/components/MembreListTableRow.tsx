@@ -55,7 +55,7 @@ const MembreListTableRow = ({
     user_id: membre_id,
     nom,
     prenom,
-    telephone,
+    // telephone,
     email,
     fonction,
     details_fonction,
@@ -76,6 +76,17 @@ const MembreListTableRow = ({
     TAccesDropdownOption | undefined
   >(undefined);
 
+  const onAccesSelect = (value: TAccesDropdownOption) => {
+    // Comme nous n'affichons pas de modal lors du changement d'accès d'un autre utilisateur que soit même,
+    // on crée une condition afin d'ouvrir la modal ou directement changer l'accès d'un tierce
+    if (isCurrentUser || value === 'remove') {
+      setAccesOptionSelected(value);
+      setIsAccesModalOpen(true);
+    } else if (membre_id) {
+      updateMembre({membre_id, name: 'niveau_acces', value});
+    }
+  };
+
   const onRemoveInvite = (membreEmail: string) => {
     removeFromCollectivite(membreEmail);
   };
@@ -84,7 +95,8 @@ const MembreListTableRow = ({
   if (membre_id === null) {
     return (
       <tr data-test={`MembreRow-${email}`} className={rowClassNames}>
-        <td colSpan={5} className={cellClassNames}>
+        {/* Mettre le valeur colSpan à 5 quand l'ion remet la colonne téléphone */}
+        <td colSpan={4} className={cellClassNames}>
           <span className="block mb-0.5 text-xs text-gray-500">{email}</span>
           <span className="font-medium text-xs text-gray-600">
             Création de compte en attente
@@ -93,12 +105,25 @@ const MembreListTableRow = ({
         <td className={`${cellClassNames}`}>
           {/* currentUserAccess="edition" permet de n'afficher que l'option "remove" même en étant admin */}
           {canUpdate ? (
-            <AccesDropdown
-              isCurrentUser={isCurrentUser}
-              currentUserAccess="edition"
-              value={niveau_acces}
-              onSelect={() => onRemoveInvite(membre.email)}
-            />
+            <>
+              <AccesDropdown
+                isCurrentUser={isCurrentUser}
+                currentUserAccess="edition"
+                value={niveau_acces}
+                onSelect={onAccesSelect}
+              />
+              <UpdateMemberAccesModal
+                isOpen={isAccesModalOpen}
+                setIsOpen={setIsAccesModalOpen}
+                selectedOption={accesOptionSelected}
+                membreId={membre_id}
+                membreEmail={membre.email}
+                isCurrentUser={isCurrentUser}
+                updateMembre={updateMembre}
+                removeFromCollectivite={removeFromCollectivite}
+                removeInvite={onRemoveInvite}
+              />
+            </>
           ) : (
             <span>{niveauAccesLabels[niveau_acces]}</span>
           )}
@@ -106,17 +131,6 @@ const MembreListTableRow = ({
       </tr>
     );
   }
-
-  const onAccesSelect = (value: TAccesDropdownOption) => {
-    // Comme nous n'affichons pas de modal lors du changement d'accès d'un autre utilisateur que soit même,
-    // on crée une condition afin d'ouvrir la modal ou directement changer l'accès d'un tierce
-    if (isCurrentUser || value === 'remove') {
-      setAccesOptionSelected(value);
-      setIsAccesModalOpen(true);
-    } else {
-      updateMembre({membre_id, name: 'niveau_acces', value});
-    }
-  };
 
   return (
     <tr data-test={`MembreRow-${email}`} className={rowClassNames}>
@@ -126,9 +140,10 @@ const MembreListTableRow = ({
         </span>
         <span className="block mt-1 text-xs text-gray-500">{email}</span>
       </td>
-      <td className={cellClassNames}>
+      {/* En attente de la page gestion de compte */}
+      {/* <td className={cellClassNames}>
         <span>{telephone}</span>
-      </td>
+      </td> */}
       <td className={cellClassNames}>
         {canUpdate ? (
           <FonctionDropdown
@@ -195,6 +210,7 @@ const MembreListTableRow = ({
               isCurrentUser={isCurrentUser}
               updateMembre={updateMembre}
               removeFromCollectivite={removeFromCollectivite}
+              removeInvite={onRemoveInvite}
             />
           </>
         ) : (
